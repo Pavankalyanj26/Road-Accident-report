@@ -1,189 +1,120 @@
-🚦 Road Accident Analysis Dashboard (Power BI)
-A Data Analytics Project on UK Road Accident Data
-📌 Project Overview
+# 🚦 Road Accident Analysis Dashboard (Power BI)
 
-This project analyzes UK road accident data to identify accident patterns, severity levels, risk conditions, and contributing factors.
-The dashboard provides a full breakdown of accident counts by vehicle type, area, weather, road conditions, severity, and more.
+## 📌 Project Overview
+This project analyzes UK road accident data to identify **accident patterns**, **severity levels**, **risk conditions**, and **contributing factors**.  
 
-The goal is to help stakeholders such as traffic departments, policy makers, and road safety teams gain insights into accident hotspots and risk patterns to improve safety measures.
+---
 
-🗂️ Dataset Information
+## 🗂️ Dataset Information
+**Dataset Used:** UK Road Accident Dataset (Public Open Data)
 
-Dataset Used:
-UK Road Accident Dataset (Publicly Available Open Data)
+**Columns include:**
+- Vehicle Type
+- Weather Conditions
+- Road Conditions
+- Accident Severity
+- Light Conditions
+- Location (Lat/Long)
+- Urban/Rural Area
+- Date & Time
+- Road Type
 
-Columns include:
+---
 
-Vehicle Type
+## 🎯 Objectives
+- Identify major accident causes  
+- Analyze trends by road & weather  
+- Visualize severity distribution  
+- Map regional accident hotspots  
 
-Weather Conditions
+---
 
-Road Conditions
+# 📊 Dashboard Highlights
 
-Accident Severity
+### 1️⃣ Summary KPIs
+- **Total Cases:** `307.97K`
+- **By Vehicle:** `307.16K`
+- **Slight Injuries:** `263.28K`
+- **Serious Injuries:** `40.74K`
+- **Fatal Injuries:** `3953`
 
-Light Conditions
+---
 
-Location (Latitude, Longitude)
+### 2️⃣ Vehicle Type Breakdown
+- Public Transport — **15.05K**  
+- Private Vehicles — **280.56K**  
+- Goods Vehicles — **9034**  
+- Agricultural — **749**  
+- Other Vehicles — **2585**
 
-Area (Urban/Rural)
+---
 
-Case ID
+### 3️⃣ Type of Area  
+- **Urban:** 64.46%  
+- **Rural:** 35.54%
 
-Date, Time
+---
 
-Road Type
+### 4️⃣ Accident Severity by Road Conditions  
+- **Dry:** 0.21M  
+- **Wet/Damp:** 0.08M  
+- Frost/Ice/Snow: Very Low  
 
-Number of Casualties
+---
 
-🎯 Project Objectives
+### 5️⃣ Light Conditions  
+- **Daylight:** 73.8%  
+- **Darkness:** 20.46%
 
-Identify major accident-causing factors
+---
 
-Compare accidents across vehicle types
+### 6️⃣ Road Type (Treemap)  
+- Single Carriageway — **230.61K**  
+- Dual Carriageway — 45.47K  
+- Roundabout — 20.93K  
 
-Analyze accident trends by road conditions
+---
 
-Understand severity levels
+### 7️⃣ UK Accident Map  
+Interactive map showing accident hotspots.  
+Includes **Night Mode toggle**.
 
-Visualize accident distribution on a map
+---
 
-Highlight patterns between day/night accidents
+# ⭐ Features
+- Filters for **Location, Vehicle Type, Weather**
+- KPI Cards
+- Maps, Pie Charts, Donut Charts
+- Data storytelling
+- Clean and responsive UI
 
-Provide insights for improving road safety
+---
 
-📊 Dashboard Highlights (Visuals Included)
-1️⃣ Total Cases Summary
+# 🛠 Tools Used
+- Power BI Desktop
+- Power Query
+- DAX
+- Excel/CSV Cleaning
 
-Total Cases: 307.97K
+---
 
-By Vehicle: 307.16K
-
-Slight Injuries: 263.28K
-
-Serious Injuries: 40.74K
-
-Fatal Cases: 3953
-
-2️⃣ Vehicle Type Breakdown
-
-Visual (Left Panel)
-
-Public Transport — 15.05K
-
-Private Vehicles — 280.56K
-
-Goods Vehicles — 9034
-
-Agricultural — 749
-
-Other Vehicles — 2585
-
-This clearly shows private vehicles contribute to the highest number of accidents.
-
-3️⃣ Type of Area (Pie Chart)
-
-Urban: 64.46%
-
-Rural: 35.54%
-
-→ Most accidents occur in urban areas, likely due to higher traffic density.
-
-4️⃣ Accident Severity by Road Conditions (Bar Chart)
-
-Dry Roads: 0.21M accidents
-
-Wet / Damp: 0.08M
-
-Frost / Ice / Snow / Flooding: Very low count
-
-→ Majority of accidents occur in dry conditions, meaning environmental factors are not the biggest cause — human and traffic behavior likely is.
-
-5️⃣ Light Conditions (Donut Chart)
-
-Daylight: 73.8%
-
-Darkness: 20.46%
-
-→ Daylight has more accidents because traffic volume is higher.
-
-6️⃣ Road Type Distribution (Treemap)
-
-Single Carriageway: 230.61K
-
-Dual Carriageway: 45.47K
-
-Roundabout: 20.93K
-
-Other Road Types: (Smaller values)
-
-→ Majority of accidents occur on single carriageway roads.
-
-7️⃣ Accident Map (UK Map)
-
-The interactive map shows accident counts by region using location markers such as:
-
-220
-
-94
-
-14
-
-19
-
-12
-…and more.
-
-Users can toggle Night Mode for better visibility.
-
-⭐ Key Features of the Dashboard
-
-Interactive filters:
-✔ Location
-✔ Vehicle Type
-✔ Weather
-
-KPI Cards:
-✔ Total cases
-✔ Serious injuries
-✔ Fatalities
-✔ Vehicle involvement count
-
-Visualizations used:
-✔ Bar Charts
-✔ Pie Charts
-✔ Donut Charts
-✔ Treemaps
-✔ KPI Cards
-✔ Interactive Map
-
-Responsive, visually appealing UI
-
-Easy-to-interpret accident insights
-
-🛠 Tools & Skills Used
-Tools
-
-Power BI Desktop
-
-Power BI Map Visuals
-
-DAX
-
-Data Cleaning (Power Query)
-
-Skills
-
-Data Visualization
-
-Data Cleaning & Transformation
-
-KPI Development
-
-Storytelling with Data
-
-Map Analytics
-
-Insights Interpretation
-
-Dashboard UI Design
+# 📁 Folder Structure
+Road-Accident-Analysis/  
+│── README.md  
+│── dashboard/road_accident_dashboard.pbix  
+│── dataset/road_accidents.csv  
+└── images/dashboard.png  
+
+---
+
+# 📌 Key Insights
+- Urban areas = most accident-prone  
+- Private vehicles dominate accident involvement  
+- Most accidents occur on **dry roads**  
+- Majority happen in **daylight**  
+- Single carriageways show highest risk  
+
+---
+
+# 🏁 Conclusion
+This dashboard delivers actionable safety insights for traffic authorities, policymakers, and public safety teams.
